@@ -1,0 +1,18 @@
+{
+  "name": "four-controllers-portfolio",
+  "version": "1.0.0",
+  "description": "Four Controllers - Professional Digital Agency & Portfolio with Admin Control Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "four-controllers",
+    "admin-dashboard",
+    "team-management"
+  ],
+  "author": "Four Controllers",
+  "license": "MIT"
+}

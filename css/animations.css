@@ -1,0 +1,95 @@
+/* ==========================================================================
+   FOUR CONTROLLERS - DYNAMIC ANIMATIONS & FX
+   ========================================================================== */
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(0, 240, 255, 0.45);
+  }
+}
+
+@keyframes radarSweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.anim-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.anim-pulse {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Ambient Background Orb Elements */
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.45;
+}
+
+.bg-orb-1 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+  top: 5%;
+  left: -100px;
+}
+
+.bg-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.22) 0%, transparent 70%);
+  top: 30%;
+  right: -150px;
+}
+
+.bg-orb-3 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  bottom: 10%;
+  left: 20%;
+}
+
+/* Dynamic Counter Number Animation */
+.count-animate {
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.count-animate.bump {
+  transform: scale(1.25);
+  color: #00F0FF !important;
+}
+
+/* Subtle Interactive Grid overlay */
+.cyber-grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}

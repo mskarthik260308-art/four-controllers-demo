@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Controllers | Architects of Digital Mastery</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Four Controllers is a premier digital collective uniting systems architecture, spatial UI/UX design, autonomous AI engineering, and zero-trust cloud infrastructure.">
+  <meta name="keywords" content="Four Controllers, portfolio, full-stack, distributed systems, AI engineering, UI UX design, cloud architecture">
+  <meta name="author" content="Four Controllers">
+  <meta property="og:title" content="Four Controllers - Premier Digital Syndicate">
+  <meta property="og:description" content="Commanding digital realms through synergy and control. Explore our projects, skills, team members, and achievements.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Orbs Background -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Four Controllers Home">
+        <div class="brand-icon-quad">
+          <div class="brand-quad-node"></div>
+          <div class="brand-quad-node"></div>
+          <div class="brand-quad-node"></div>
+          <div class="brand-quad-node"></div>
+        </div>
+        <span class="dynamic-brand-name">Four Controllers</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#team" class="nav-link">Controllers</a></li>
+        <li><a href="#skills" class="nav-link">Capabilities</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="#achievements" class="nav-link">Honors</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action items: Live Counter Pill + Admin Portal -->
+      <div class="nav-actions">
+        <!-- Live Team Counter Pill in Navigation -->
+        <a href="#team" class="header-team-counter" title="View Active Team Controllers" id="headerCounterLink">
+          <span class="badge-pulse"></span>
+          <span><span class="counter-num" id="headerTeamCount">4</span> Controllers Active</span>
+        </a>
+
+        <a href="admin.html" class="btn btn-admin" title="Open Admin Control Center" id="navAdminBtn">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Admin Portal
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <main id="mainContent">
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Content -->
+          <div class="hero-content">
+            <div>
+              <span class="badge badge-pulse">⚡ NEXT-GEN DIGITAL COLLECTIVE</span>
+            </div>
+
+            <h1 class="hero-headline" id="heroHeadline">
+              Commanding Digital Realms Through <span class="text-gradient-cyan">Synergy & Control</span>
+            </h1>
+
+            <p class="hero-description" id="heroDesc">
+              Four Controllers is a premier syndicate of elite systems architects, creative directors, AI pioneers, and cloud security masters. We forge resilient platforms and transcendent digital experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="heroExploreBtn">
+                Explore Projects
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#team" class="btn btn-secondary" id="heroMeetTeamBtn">
+                Meet The Controllers
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right: Interactive Visual Hub & Live Team Counter -->
+          <div class="hero-visual-card anim-float">
+            <div class="hub-topbar">
+              <div class="hub-status">
+                <span class="status-dot"></span>
+                <span>SYSTEM ONLINE // ALL NODES ACTIVE</span>
+              </div>
+              <span class="text-mono" style="font-size: 0.75rem; color: var(--text-muted);">NODE PROTOCOL V4</span>
+            </div>
+
+            <!-- PROMINENT LIVE TEAM COUNTER CARD -->
+            <div class="hero-team-counter-box anim-pulse" id="heroCounterCard">
+              <div class="counter-box-header">
+                <span class="counter-box-title">CURRENT FORCE STRENGTH</span>
+                <span class="badge">LIVE SYNC</span>
+              </div>
+              <div class="counter-digits-row">
+                <span class="counter-big-number count-animate" id="heroTeamCount">4</span>
+                <div>
+                  <div class="counter-label">Active Team Controllers</div>
+                  <div class="counter-sub">Full-Stack • Spatial UX • AI Agents • Cloud Sec</div>
+                </div>
+              </div>
+
+              <!-- Interactive Controller Avatar Stack -->
+              <div class="counter-avatar-stack" id="heroAvatarStack">
+                <!-- Injected dynamically via app.js -->
+              </div>
+            </div>
+
+            <!-- Supporting Telemetry Metric Grid -->
+            <div class="hub-metric-grid">
+              <div class="metric-cell">
+                <div class="metric-val" id="statProjects">42+</div>
+                <div class="metric-tag">Delivered</div>
+              </div>
+              <div class="metric-cell">
+                <div class="metric-val" id="statSatisfaction">99.8%</div>
+                <div class="metric-tag">SLA Reliability</div>
+              </div>
+              <div class="metric-cell">
+                <div class="metric-val" id="statAwards">16+</div>
+                <div class="metric-tag">Global Honors</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE CONTROLLERS (TEAM MEMBERS SECTION)
+         ========================================================================== -->
+    <section class="section" id="team">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">THE CONTROLLERS // TEAM SYNERGY</span>
+          <h2 class="section-title">The Force Behind Four Controllers</h2>
+          <p class="section-desc">
+            Each controller commands a foundational domain of the digital stack, synthesizing into an unstoppable force for complex engineering and creative endeavors.
+          </p>
+        </div>
+
+        <!-- Dynamic Live Team Summary Banner -->
+        <div class="team-summary-banner" id="teamBanner">
+          <div class="team-banner-left">
+            <div class="team-banner-icon">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="team-banner-text">
+              <h3>Active Syndicate Roster</h3>
+              <p>Dynamic live directory managed directly via the Four Controllers Command Center.</p>
+            </div>
+          </div>
+          <div class="team-banner-stat">
+            <span>Force Total:</span>
+            <span class="stat-count" id="bannerTeamCount">4</span>
+            <span style="color: var(--text-secondary); font-size: 0.9rem;">Specialists</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Team Grid -->
+        <div class="team-grid" id="teamGrid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & CAPABILITIES MATRIX
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">COMPETENCY MATRIX</span>
+          <h2 class="section-title">Technical Mastery & Architecture</h2>
+          <p class="section-desc">
+            From low-level microsecond optimizations to high-dimensional generative AI pipelines, our multidisciplinary skill matrix covers every dimension of modern software.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS & SHOWCASE
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">FEATURED DELIVERIES</span>
+          <h2 class="section-title">Engineered For Impact</h2>
+          <p class="section-desc">
+            Explore our hallmark deployments across artificial intelligence, decentralized fintech, 3D web experiences, and zero-trust cloud perimeters.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="projects-filter-bar" id="projectsFilterBar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="fintech">Fintech & Systems</button>
+          <button class="filter-btn" data-filter="creative">Creative & UI/UX</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & Security</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENTS & HONORS
+         ========================================================================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">TRACK RECORD & HONORS</span>
+          <h2 class="section-title">Recognitions of Excellence</h2>
+          <p class="section-desc">
+            Industry accolades celebrating our commitment to architectural rigor, artistic finesse, and breakthrough automation.
+          </p>
+        </div>
+
+        <div class="achievements-grid" id="achievementsGrid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">INITIATE TRANSMISSION</span>
+          <h2 class="section-title">Let’s Build Something Monumental</h2>
+          <p class="section-desc">
+            Whether you need end-to-end architectural leadership, AI agent deployment, or immersive UI engineering, the Four Controllers team is prepared to synchronize.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Card -->
+          <div class="contact-info-card">
+            <div>
+              <span class="badge" style="margin-bottom: 12px;">DIRECT UPLINK</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Command Headquarters</h3>
+              <p style="font-size: 0.95rem;">Always synchronized across worldwide edge nodes and timezones.</p>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Direct Email</div>
+                <div class="contact-detail-val" id="contactEmail">command@fourcontrollers.dev</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Encrypted Comms</div>
+                <div class="contact-detail-val" id="contactPhone">+1 (555) 420-CTRL</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Base Location</div>
+                <div class="contact-detail-val" id="contactLocation">San Francisco, CA & Global Remote</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(0, 0, 0, 0.3); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-top: auto;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">Looking for Admin Access?</div>
+              <p style="font-size: 0.82rem; margin-bottom: 12px;">Manage team controllers, projects, competencies and view visitor submissions.</p>
+              <a href="admin.html" class="btn btn-admin" style="display: inline-flex;">Enter Admin Control Center →</a>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Transmit A Project Brief</h3>
+            <p style="font-size: 0.92rem; margin-bottom: 24px;">Your message will be securely routed directly into our admin dashboard.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="formName">Your Full Name / Entity *</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Alex Mercer" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formEmail">Email Address *</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formService">Engagement Objective</label>
+                <select id="formService" class="form-select">
+                  <option value="Full Architecture & Engineering">Full Architecture & Engineering</option>
+                  <option value="AI Agents & Cognitive Systems">AI Agents & Cognitive Systems</option>
+                  <option value="Spatial UI/UX & Creative Direction">Spatial UI/UX & Creative Direction</option>
+                  <option value="Cloud Security & SRE Consulting">Cloud Security & SRE Consulting</option>
+                  <option value="General Strategic Inquiry">General Strategic Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formMessage">Project Details / Message *</label>
+                <textarea id="formMessage" class="form-textarea" placeholder="Describe the scope, goals, and technical requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Transmit Message
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-icon-quad">
+            <div class="brand-quad-node"></div>
+            <div class="brand-quad-node"></div>
+            <div class="brand-quad-node"></div>
+            <div class="brand-quad-node"></div>
+          </div>
+          <span class="dynamic-brand-name">Four Controllers</span>
+        </a>
+
+        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+          <a href="#team" class="nav-link">Controllers</a>
+          <a href="#skills" class="nav-link">Capabilities</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="admin.html" class="nav-link" style="color: var(--accent-cyan);">Admin Control</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="currentYear">2026</span> <strong class="dynamic-brand-name">Four Controllers</strong>. All rights reserved. Engineered for perfection.</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);">
+            STATUS: ACTIVE // 4 CORES RUNNING
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
